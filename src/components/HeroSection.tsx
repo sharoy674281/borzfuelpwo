@@ -4,7 +4,7 @@ export function HeroSection() {
   return (
     <section
       id="product"
-      className="pt-24 pb-16 md:pt-32 md:pb-24 relative overflow-hidden"
+      className="pt-24 pb-16 md:pt-32 md:pb-24 relative overflow-hidden bg-gradient-to-b from-black to-gray-950"
     >
       {/* Lightning Pattern Background */}
       <div className="absolute inset-0 opacity-25 pointer-events-none">
@@ -152,6 +152,32 @@ export function HeroSection() {
                 intensity.
               </p>
             </div>
+
+            {/* Mobile: Product Image between text and buttons */}
+            <div className="md:hidden mb-8">
+              <div className="relative">
+                <div className="absolute inset-0 flex items-center justify-center z-0">
+                  <div
+                    className="w-[80%] h-[80%] rounded-full blur-2xl opacity-60"
+                    style={{
+                      background: 'radial-gradient(circle at 60% 40%, #181f2f 60%, #1e293b 100%)',
+                      boxShadow: '0 0 80px 20px #1e40af, 0 0 0 0 #000'
+                    }}
+                  />
+                </div>
+                <div className="relative z-10">
+                  <img
+                    src="pwo mock eks bilde.png"
+                    alt="BorzFuel Pre-Workout Supplement"
+                    className="mx-auto max-h-[400px] drop-shadow-2xl"
+                  />
+                </div>
+                <div className="absolute -top-4 -right-4 bg-blue-600 text-white p-3 font-bold transform rotate-12 z-20">
+                  NEW FORMULA
+                </div>
+              </div>
+            </div>
+
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#buy"
@@ -181,8 +207,8 @@ export function HeroSection() {
               </div>
             </div>
           </div>
-          <div className="md:w-1/2 relative">
-            {/* Bakgrunn bak produktet for bedre fokus */}
+          {/* Desktop: Product Image on right side */}
+          <div className="md:w-1/2 relative hidden md:block">
             <div className="absolute inset-0 flex items-center justify-center z-0">
               <div
                 className="w-[80%] h-[80%] rounded-full blur-2xl opacity-60"
