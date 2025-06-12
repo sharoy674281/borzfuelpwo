@@ -38,7 +38,7 @@ export function Header() {
               <ShoppingCart size={20} />
             </button>
           </div>
-          <a href="#buy" className="bg-gradient-to-r from-blue-500 to-blue-700 px-8 py-3 text-white font-bold transition-all rounded-lg hover:from-blue-600 hover:to-blue-800 hover:shadow-lg transform hover:scale-105">
+          <a href="#buy" className="bg-gradient-to-r from-blue-500 to-blue-700 px-6 py-2 text-white font-bold transition-all rounded-lg hover:from-blue-600 hover:to-blue-800 hover:shadow-lg transform hover:scale-105">
             BUY NOW
           </a>
         </div>

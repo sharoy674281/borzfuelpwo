@@ -55,7 +55,7 @@ export function BuySection() {
                 <span className="text-blue-500 ml-3 font-medium text-sm lg:text-base">4.9 (500+ reviews)</span>
               </div>
               <div className="mb-4 lg:mb-6">
-                <span className="text-3xl lg:text-4xl font-bold text-white">$49.99</span>
+                <span className="text-3xl font-bold text-white">$49.99</span>
                 <span className="text-gray-400 line-through ml-2 lg:ml-3 text-lg lg:text-xl">$59.99</span>
                 <span className="text-green-400 ml-2 lg:ml-3 font-bold text-sm lg:text-base">Save 17%</span>
               </div>
@@ -63,29 +63,29 @@ export function BuySection() {
 
             {/* Quantity Selector */}
             <div className="mb-6 lg:mb-8">
-              <h4 className="font-bold mb-3 lg:mb-4 text-white text-base lg:text-lg">SELECT QUANTITY</h4>
+              <h4 className="font-bold mb-3 lg:mb-4 text-white text-base lg:text-md">SELECT QUANTITY</h4>
               <div className="flex items-center bg-gray-800 rounded-lg p-1 w-fit">
                 <button 
                   onClick={decreaseQuantity} 
                   className="bg-gray-700 hover:bg-gray-600 p-2 lg:p-3 text-white transition-colors rounded-l-lg"
                 >
-                  <Minus size={18} />
+                  <Minus size={15} />
                 </button>
-                <span className="px-6 lg:px-8 py-2 lg:py-3 bg-gray-800 text-white font-bold text-lg lg:text-xl">
+                <span className="px-6 lg:px-5 py-2 lg:py-2 bg-gray-800 text-white font-bold text-lg lg:text-md">
                   {quantity}
                 </span>
                 <button 
                   onClick={increaseQuantity} 
                   className="bg-gray-700 hover:bg-gray-600 p-2 lg:p-3 text-white transition-colors rounded-r-lg"
                 >
-                  <Plus size={18} />
+                  <Plus size={15} />
                 </button>
               </div>
             </div>
 
             {/* Add to Cart */}
             <div className="mb-6 lg:mb-8">
-              <button className="w-full bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 py-4 lg:py-5 text-white font-bold flex items-center justify-center transition-all duration-300 rounded-xl shadow-lg hover:shadow-blue-500/25 transform hover:scale-[1.02]">
+              <button className="w-full bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 py-4 lg:py-4 text-white font-bold flex items-center justify-center transition-all duration-300 rounded-xl shadow-lg hover:shadow-blue-500/25 transform hover:scale-[1.02]">
                 <ShoppingCart className="mr-2 lg:mr-3" size={20} />
                 <span className="text-sm lg:text-base">ADD TO CART - ${(49.99 * quantity).toFixed(2)}</span>
               </button>
